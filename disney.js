@@ -20,7 +20,7 @@ const getDisneyCharacters = function () {
     <h5 class="card-title" '>${film.films}</h5>
     <p class="card-text">PROTAGONISTA:${film.name}.</p>
     
-    <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+    <a href="#" class="btn btn-primary ">Go somewhere</a>
   </div>
 </div>
       </div>`;
