@@ -14,7 +14,7 @@ const getYugiohCard = function () {
       const nuovoset = new Set();
       for (let i = 0; i < 20; i++) {
         // console.log(card.data[i]);
-        row.innerHTML += `<div class="col col-12 col-md-6 col-lg-4 g-3 " data-id="${card.data[i].id}">
+        row.innerHTML += `<div class="hpcard col col-12 col-md-6 col-lg-4 g-3 " data-id="${card.data[i].id}">
         <div class="card h-100 " >
   <img src="${card.data[i].card_images[0].image_url}" class="card-img-top" alt="...">
   <div class="card-body d-flex flex-column">

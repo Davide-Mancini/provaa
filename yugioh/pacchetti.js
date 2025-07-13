@@ -1,8 +1,18 @@
 const buttonApriPacchetto = document.getElementById("apripacchetto");
-buttonApriPacchetto.addEventListener("click", () => {
-  const random10 = getRandomCards(allCards, 10);
-});
 let allCards = [];
+buttonApriPacchetto.addEventListener("click", () => {
+  const random12 = getRandomCards(allCards, 12);
+  random12.forEach((carta) => {
+    const pacchettoAperto = document.getElementById("pacchetto-aperto");
+    pacchettoAperto.innerHTML += `<div class="colonna col col-2">
+    <div class="card" >
+  <img src="${carta.card_images[0].image_url}" class="card-img-top" alt="...">
+  
+</div>
+    </div>`;
+  });
+});
+
 console.log(row);
 const getRandomCards = function (arr, num) {
   const arrayCopia = [...arr];
@@ -15,3 +25,21 @@ const getRandomCards = function (arr, num) {
   }
   return arrayCopia.slice(0, num);
 };
+
+const getYugiohCard = function () {
+  fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php")
+    .then((res) => {
+      if (res.ok === true) {
+        return res.json();
+      } else {
+        throw new Error("errore");
+      }
+    })
+    .then((card) => {
+      allCards = card.data;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+getYugiohCard();

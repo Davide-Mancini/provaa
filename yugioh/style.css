@@ -1,8 +1,13 @@
-.card:hover {
+.hpcard .card:hover {
   transform: scale(1.1);
   transition: 1s;
   z-index: 1;
 }
 #yourdeck .col {
   transform: scale(0.8);
+}
+.colonna .card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  z-index: 1;
 }
