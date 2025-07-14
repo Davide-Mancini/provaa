@@ -18,40 +18,40 @@
   z-index: 2;
 }
 .colonna:nth-child(1) {
-  animation: dropCard 2s linear 0s;
+  animation: dropCard 3s linear 0s;
 }
 .colonna:nth-child(2) {
-  animation: dropCard 2s linear 1s;
+  animation: dropCard 3s linear 1s;
 }
 .colonna:nth-child(3) {
-  animation: dropCard 2s linear 2s;
+  animation: dropCard 3s linear 2s;
 }
 .colonna:nth-child(4) {
-  animation: dropCard 2s linear 3s;
+  animation: dropCard 3s linear 3s;
 }
 .colonna:nth-child(5) {
-  animation: dropCard 2s linear 4s;
+  animation: dropCard 3s linear 4s;
 }
 .colonna:nth-child(6) {
-  animation: dropCard 2s linear 5s;
+  animation: dropCard 3s linear 5s;
 }
 .colonna:nth-child(7) {
-  animation: dropCard 2s linear 6s;
+  animation: dropCard 3s linear 6s;
 }
 .colonna:nth-child(8) {
-  animation: dropCard 2s linear 7s;
+  animation: dropCard 3s linear 7s;
 }
 .colonna:nth-child(9) {
-  animation: dropCard 2s linear 8s;
+  animation: dropCard 3s linear 8s;
 }
 .colonna:nth-child(10) {
-  animation: dropCard 2s linear 9s;
+  animation: dropCard 3s linear 9s;
 }
 .colonna:nth-child(11) {
-  animation: dropCard 2s linear 10s;
+  animation: dropCard 3s linear 10s;
 }
 .colonna:nth-child(12) {
-  animation: dropCard 2s linear 11s;
+  animation: dropCard 3s linear 11s;
 }
 
 .visibile {
