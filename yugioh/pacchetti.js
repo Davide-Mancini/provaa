@@ -1,6 +1,8 @@
 const buttonApriPacchetto = document.getElementById("apripacchetto");
 let allCards = [];
 buttonApriPacchetto.addEventListener("click", () => {
+  const eliminaPacchetto = document.getElementsByClassName("eliminaPacchetto");
+  eliminaPacchetto[0].classList.add("d-none");
   const random12 = getRandomCards(allCards, 12);
   random12.forEach((carta) => {
     const pacchettoAperto = document.getElementById("pacchetto-aperto");
@@ -10,6 +12,13 @@ buttonApriPacchetto.addEventListener("click", () => {
   
 </div>
     </div>`;
+    const colonne = document.querySelectorAll(".colonna");
+    colonne.forEach((colonna, i) => {
+      setTimeout(() => {
+        colonna.classList.add("visibile");
+        colonna.style.animation = `dropCard 3s linear ${i * 3}s forwards`;
+      }, i * 3000);
+    });
   });
 });
 

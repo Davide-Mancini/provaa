@@ -6,8 +6,81 @@
 #yourdeck .col {
   transform: scale(0.8);
 }
+.colonna {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 3s ease-in;
+}
+
 .colonna .card:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  z-index: 1;
+  z-index: 2;
+}
+.colonna:nth-child(1) {
+  animation: dropCard 2s linear 0s;
+}
+.colonna:nth-child(2) {
+  animation: dropCard 2s linear 1s;
+}
+.colonna:nth-child(3) {
+  animation: dropCard 2s linear 2s;
+}
+.colonna:nth-child(4) {
+  animation: dropCard 2s linear 3s;
+}
+.colonna:nth-child(5) {
+  animation: dropCard 2s linear 4s;
+}
+.colonna:nth-child(6) {
+  animation: dropCard 2s linear 5s;
+}
+.colonna:nth-child(7) {
+  animation: dropCard 2s linear 6s;
+}
+.colonna:nth-child(8) {
+  animation: dropCard 2s linear 7s;
+}
+.colonna:nth-child(9) {
+  animation: dropCard 2s linear 8s;
+}
+.colonna:nth-child(10) {
+  animation: dropCard 2s linear 9s;
+}
+.colonna:nth-child(11) {
+  animation: dropCard 2s linear 10s;
+}
+.colonna:nth-child(12) {
+  animation: dropCard 2s linear 11s;
+}
+
+.visibile {
+  opacity: 1;
+  visibility: visible;
+}
+@keyframes dropCard {
+  0% {
+    scale: 4;
+  }
+  20% {
+    scale: 3.5;
+  }
+  35% {
+    scale: 3;
+  }
+  50% {
+    scale: 2.5;
+  }
+  65% {
+    scale: 2;
+  }
+  80% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.d-none {
+  display: none;
 }

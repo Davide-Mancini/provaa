@@ -12,7 +12,7 @@ const getYugiohCard = function () {
     .then((card) => {
       // GENERO LE CARD--------------------------------------------------------------------
       const nuovoset = new Set();
-      for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 200; i++) {
         // console.log(card.data[i]);
         row.innerHTML += `<div class="hpcard col col-12 col-md-6 col-lg-4 g-3 " data-id="${card.data[i].id}">
         <div class="card h-100 " >
